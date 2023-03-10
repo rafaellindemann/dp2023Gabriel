@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        Pao: <input type="text" id="inpPao" placeholder="Escolha o pão" list="opPao">
+        <datalist id="opPao">
+            <option value="Italiano Branco"></option>
+            <option value="Parmesão e orégano"></option>
+            <option value="3 Queijos"></option>
+            <option value="9 grãos"></option>
+        </datalist>
+
+        Tamanho: <input type="text" id="inpTamanho" placeholder="Escolha o tamanho" list="opTamanho">
+        <datalist id="opTamanho">
+            <option value="15cm"></option>
+            <option value="30cm"></option>
+        </datalist>
+
+        Recheio: <input type="text" id="inpRecheio" placeholder="Escolha o recheio" list="opRecheio">
+        <datalist id="opRecheio">
+            <option value="Carne"></option>
+            <option value="Churrasco"></option>
+        </datalist>
+
+        <div class="generica">
+            Adicionais: 
+            <div>
+                <input type="checkbox" id="chkCreamcheese"> Creamcheese
+            </div>
+            <div>
+                <input type="checkbox" id="chkBacon"> Bacon
+            </div>
+            <div>
+                <input type="checkbox" id="chkPresunto"> Presunto
+            </div>
+        </div>
+
+        <div class="generica">
+            Saladas: 
+            <div><input type="checkbox" id="chkAlface"> Alface</div>
+            <div><input type="checkbox" id="chkTomate"> Tomate</div>
+            <div><input type="checkbox" id="chkPimentao"> Pimentão</div>
+            <div><input type="checkbox" id="chkCebola"> Cebola</div>
+        </div>
+        <div class="generica">
+            Molhos: 
+            <div><input type="checkbox" id="chkMaionese"> Maionese</div>
+            <div><input type="checkbox" id="chkMaioneseTemperada"> Maionese Temperada</div>
+            <div><input type="checkbox" id="chkChipotle"> Chipotle</div>
+            <div><input type="checkbox" id="chkMostarda"> Mostarda</div>
+        </div>
+        <div id="divPesquisar">
+            <label for="cars">Selecione o sanduiche:</label>
+            <select name="sanduiches" id="sanduiches">
+
+            </select>
+        </div>
+
+        <div>
+            <button onclick="cadastrar()">Cadastrar</button>
+            <button onclick="pesquisar()">Pesquisar</button>
+            <button onclick="editar()">Editar</button>
+            <button onclick="deletar()">Deletar</button>
+            <button onclick="testar()">TESTES</button>
+
+            <!-- <button onclick="mostrar()">Mostrar</button> -->
+        </div>
+    
+        <div id="divSanduiches"></div>
+    </div>
+    <script src="objeto.js"></script>
+</body>
+</html>
